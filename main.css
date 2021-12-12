@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&family=Roboto+Slab&display=swap');
+*{
+	padding: 0;
+	margin: 0;
+}
+a{
+  color:#fff;
+  text-decoration: none;
+}
+.header {
+	display: flex;
+	justify-content: space-between;
+	background-color: #0000006c;
+	color: #fff;
+  font-family: Comfortaa;
+  position: fixed;
+	width: 100vw;
+	height: 4vw;
+	top: 0px;
+}
+.header__section {
+	display: flex;
+	align-items: center;
+}
+.header__item {
+	padding: 10px 15px;
+	margin-left: 40px;
+	font-size: 20px;
+	margin-right: 40px;
+}
+.header__item:hover{
+	background-color: #800000;
+	border-radius: 4px;
+}
+.headerButton{
+	cursor: pointer;
+}
+.container-home{
+	display: flex;
+	background-image: url(https://storge.pic2.me/upload/837/54a6ec51d4c0f.jpg);
+	background-blend-mode: multiply;
+	background-size: cover;
+	background-color: #808080;
+	color: #fff;
+	height: 55vw;
+	padding: 10px;
+	border-bottom: solid black 40px;
+	font-size: 3vh;
+	}
+
+.container-razmes{
+display: flex;
+background-image: url(https://www.baikal-olkhon.ru/pic/cc7ddee5353190f5812dc0101ddb3484/Baza_otdyha_Laskoviy_bereg.jpg); 
+background-blend-mode: multiply;
+background-size: cover;
+background-color: #808080;
+color: #fff;
+font-size: 3vh;
+height: 55vw;
+padding: 10px;
+border-bottom: solid black 40px;
+}
+
+.container-uslugi{
+display: flex;
+background-image: url(http://www.v3wall.com/wallpaper/1920_1080/1412/1920_1080_20141217011056999001.jpg);
+background-blend-mode: multiply;
+background-size: cover;
+background-color: #808080;
+color: #fff;
+font-size: 3vh;
+height: 55vw;
+padding: 10px;
+border-bottom: solid black 40px;
+}
+
+.container-price{
+display: flex;
+background-image: url(https://7themes.su/php/imres/resize.php?width=1920&height=1080&cropratio=16:9&image=/_ph/27/970007327.jpg);
+background-blend-mode: multiply;
+background-size: cover;
+background-color: #808080;
+text-align: center;
+color: #fff;
+height: 55vw;
+padding: 10px;
+border-bottom: solid black 40px;
+}
+
+
+
+
+.obratnuj-zvonok{
+	width: 100%;
+	max-width: 25vw;
+	margin-bottom: 3vw;
+}
+.form-zvonok{
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	padding: 0 20px;
+	box-sizing: border-box;
+	font-family: Comfortaa;
+}
+.form-zvonok div{
+	padding: 15px 0;
+}
+.bot-send-mail{
+	box-sizing: border-box;
+	width: 100%;
+}
+.form-zvonok label,.form-zvonok input{
+	display: block;
+	width: 100%;
+	box-sizing: border-box;
+}
+.form-zvonok label{
+	margin-bottom: 5px;
+	font-weight: bold;
+}
+.form-zvonok input{
+	padding: 0px 15px;
+	margin-top: 10px;
+	height: 40px;
+}
+.form-zvonok label span{
+	color: rgb(218, 180, 12);
+}
+.form-zvonok .bt{
+	display: inline-block;
+	  border-radius: 4px;
+	  background-color: #ffae00;;
+	  border: none;
+	  color: #FFFFFF;
+	  text-align: center;
+	  font-size: 18px;
+	  padding: 5px;
+	  width: 100%;
+	  transition: all 0.5s;
+	  cursor: pointer;
+		height: 50px;
+}
+.mail{
+	height: 60vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.bt span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+.box{
+	margin-top: auto;
+	text-align: center;
+	margin-bottom: 7vw;
+}
+.tablica{
+	margin-top: auto;
+	text-align: left;
+	background: #17172e;
+	margin: auto;
+    border-collapse: collapse; 
+	margin-bottom: 20%;
+	font-size:25px;
+}
+.tablica1{
+	text-align: right;
+	background: #6e7575;
+}
+.form-zvonok .bt:hover{
+	color: #000000;
+	background-color: #fff;
+}
+.footer{
+	width: 100%;
+	height: 10vw;
+	background-color: #979797;
+	display: flex;
+	flex-flow: row;
+	justify-content: space-evenly;
+	align-items: center;
+}
+.footer div{
+	width: 20vw;
+	height: 5vw;
+}
+.footer div img{
+	width: 6vw;
+	height: 6vw;
+}
+.right{
+	text-align: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.right i{
+	display: flex;
+	font-size: 1.5vh;
+	color: #ffae00;
+
+
+}
