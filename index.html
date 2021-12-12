@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Tanya Gadzhula digitlab</title>
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+
+<style>
+body {
+  background: #8080803d;
+}
+</style>
+
+<div class="header">
+    <div class="header__section">
+      <div class="header__item headerlogo">
+        <a href="#" onclick="slowScroll('#home')">Центр отдыха "Байкал"</a>
+      </div>
+      <div class="header__item headerButton"><a href="#" onclick="slowScroll('#razmes')">
+        Размещение</a></div>
+        <div class="header__item headerButton"><a href="#" onclick="slowScroll('#uslugi')">
+          Услуги</a></div>
+          <div class="header__item headerButton"><a href="#" onclick="slowScroll('#price')">
+            Цены</a></div>
+    </div>
+    <div class="header__section">
+        <div class="header__item headerButton"><a href="#" onclick="slowScroll('#mail')">
+          Контакты</a></div>
+    </div>
+</div>
+
+<div id="home">
+  <div class="container-home">
+    <div class="box">
+      <h3>Рекрационный центр "Байкал"</h3>
+      <p></br>Наша турбаза - супер пупер классная штука. Может быть, вы к нам хотите? Тогда милости просим! Листайте наш сайт вниз, пользуйтесь кнопочками вверху страницы, а в конце концов - бронируйте скорее домик!</p>
+    </div>
+  </div>
+  </div>
+
+  <div id="razmes">
+    <div class="container-razmes">
+      <div class="box">
+        <p>В домиках могут комфортно разместиться от 20 до 40 человек. Каждый домик оборудован печью "бухара", спальными матрицами, комплектами постельного белья и столом. В традиционных бурятских юртах могут разместиться от десяти до двадцати человек в летний сезон с мая по сентябрь. Каждая юрта оборудована лампочкой.</p>
+      </div>
+    </div>
+    </div>
+
+  <div id="uslugi">
+    <div class="container-uslugi">
+      <div class="box">
+        <p>Наш центр отдыха "Байкал" находится недалеко от поселка Сахюрта, станция МРС. Добраться к нам вы можете с автовокзала Иркутска, также мы предоставляем услуги трансфера, которые можно забронировать заранее. Также в спектр услуг входят экскурсии по окресностям оз. Байкал, туры на лошадях, походы и многое другое.   </p>
+      </div>
+      </div>
+      </div>
+
+<div id="price">
+  <div class="container-price">
+    <div class="tablica">
+    <table border ="1">
+      <tr>
+       <th colspan="2"> Цены на наши услуги</th>
+       <th></th>    
+      </tr>
+      <tr>
+       <td><div class="tablica1">РАЗМЕЩЕНИЕ В ЮРТЕ</br> </td>
+       <td>500 РУБ./ЧЕЛ. (летний вариант)</td>
+     </tr>
+     <tr>
+      <td><div class="tablica1">РАЗМЕЩЕНИЕ В ДОМИКЕ (ЛЕТО)</br></td>
+      <td>600 РУБ./ЧЕЛ./СУТКИ</td>
+    </tr>
+    <tr>
+      <td><div class="tablica1">РАЗМЕЩЕНИЕ В ДОМИКЕ (ЗИМА)</td>
+      <td>1000 РУБ./ЧЕЛ./СУТКИ</td>
+    </tr>
+    <tr>
+      <td><div class="tablica1">АРЕНДА СПАЛЬНИКА</td>
+      <td>100 РУБ./СУТКИ</td>
+    </tr>
+    <tr>
+      <td><div class="tablica1">БАНЯ</td>
+      <td> 500 РУБ./ЧАС
+      </td>
+    </tr>
+    <tr>
+      <td><div class="tablica1">ДРОВА</td>
+      <td>300 РУБ (СВЯЗКА)</td>
+    </tr>    
+    </table>
+  </div>
+</div>
+</div>
+<div id="mail">
+<div class="mail">
+  <form class="obratnuj-zvonok" autocomplete="off" >
+  <div class="form-zvonok">
+    <div>
+      <label>Введите ваше имя <span>*</span></label>
+      <input type='text' placeholder="Татьяна" name='username' required></div>
+    <div>
+      <label>Номер телефона на который перезвонить <span>*</span></label>
+      <input type='number' placeholder="+7 (911) 111 11 11" name='usernumber' required></div>
+    <div>
+      <label>Что вы хотели?</label>
+      <input type='text' placeholder="Забронировать домик" name='question'>
+    </div>
+    <input class="bt" type='submit' value='Отправить'>
+  </div>
+  </form>
+</div>
+</div>
+<div class="footer">
+  <div class="verh"><img src="logo.png"></div>
+  <div class="right"><h4>Special for digitlab<br><i>Gadzhula Tatyana</i></h4></div>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script>
+  function slowScroll(id) {
+  $('html,body').animate({
+    scrollTop: $(id).offset().top
+    }, 500);
+  }
+
+  $(document).on("scroll", function() {
+    if($(window).scrollTop() === 0 )
+      $("header").removeClass("fixed");
+      else
+      $("header").attr("class","fixed");
+  });
+    function PopUpShow(){
+        $("#popup1").show();
+    }
+    function PopUpHide(){
+        $("#popup1").hide();
+    };
+</script>
+</body>
+</html>
